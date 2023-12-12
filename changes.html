@@ -5,87 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merged Images with Clickable Link</title>
     <style>
-        body {
-            background-color: #f8f8f8;
-            font-family: 'Arial', sans-serif;
-        }
-
+        /* Set an explicit width for both images */
         .merged-image {
-            width: 167px;
-            height: auto;
-            margin: 0 0px;
+            width: 167px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio when resizing */
+            margin: 0 0px; /* Add some margin between the images */
         }
 
+        /* Common style for text elements */
+        /* Style for the title */
         .title {
             text-align: center;
-            font-weight: bold;
+            font-weight: bold; /* Make the text bold */
             font-size: 28px;
             margin-top: 30px;
-            color: #333;
         }
 
+        /* Style for the sub-title */
         .sub-title {
             font-size: 22px;
             text-align: right;
-            font-weight: bold;
-            color: #333;
+            font-weight: bold; /* Make the text bold */
         }
 
+        /* Style for the text before the clickable link */
         .before-link {
             font-size: 20px;
-            color: black;
+            color: black; /* Set the color of the text */
         }
 
+        /* Style for the clickable link */
         .linked-word {
-            color: blue;
-            cursor: pointer;
+            color: blue; /* Set the color of the link */
+            cursor: pointer; /* Change the cursor to a pointer on hover */
             text-decoration: none;
             font-size: 20px;
-            transition: color 0.3s ease;
         }
 
-        .linked-word:hover {
-            color: darkblue;
-        }
-
+        /* Style for the Rules class */
         .Rules {
             text-align: left !important;
-            font-weight: bold;
+            font-weight: bold; /* Make the text bold */
             font-size: 20px;
         }
-
-        .text1 {
+       .text1 {
             text-align: right !important;
-            font-weight: bold;
+            font-weight: bold; /* Make the text bold */
             font-size: 20px;
         }
-
         .text2 {
             text-align: center !important;
-            font-weight: bold;
+            font-weight: bold; /* Make the text bold */
             font-size: 20px;
         }
-
+        /* Style for the Note */
         .Note {
             text-align: right;
             font-size: 16px;
             color: red;
         }
+
+        /* Container for each image and text */
+        .image-container {
+            text-align: center;
+            display: inline-block; /* Display containers side by side */
+        }
+
+        /* Style for the text above each image */
         .image-text {
             font-size: 20px;
             margin-top: 10px;
-            font-weight: bold;
+            font-weight: bold; /* Make the text bold */
         }
 
         .logo {
-            width: 100%;
-            height: 100px;
+            width: 100%; /* Adjust the width as needed */
+            height: 100px; /* Maintain aspect ratio when resizing */
         }
-
+        
+        /* Style for the logo */
         .logo-container {
-            text-align: center;
-            margin-top: 2px;
-            margin-bottom: 2px;
+            text-align: center; /* Center the logo */
+            margin-top: 0px; /* Adjust top margin as needed */
+            margin-bottom: 2px; /* Adjust bottom margin as needed */
         }
     </style>
 </head>
@@ -125,7 +127,7 @@
     <div class="Note">
         <p>ملاحظة: موجود 8 اختلافات؛ لاقي 7 وفوت بالسحب، و إذا لقيت الثامن، رح نكتب اسمك مرتين لتضاعف فرصتك بالربح</p>
     </div>
-
+    
     <div class="image-container">
         <div class="image-text">
             <p>Original:</p>
@@ -139,7 +141,6 @@
         </div>
         <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_488.jpg" alt="Image 2" class="merged-image">
     </div>
-
     <!-- Logo -->
     <div class="logo-container">
         <img src="https://storage.googleapis.com/aluminum_saloum/SALUMINIUM%20final%20180x%20130_page-0001.jpg" alt="Logo" class="logo">
