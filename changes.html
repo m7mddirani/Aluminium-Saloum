@@ -11,20 +11,6 @@
             height: auto; /* Maintain aspect ratio when resizing */
             margin: 0 0px; /* Add some margin between the images */
         }
-        
-        /* Style for the logo */
-        .logo-container {
-            text-align: center; /* Center the logo */
-            position: fixed; /* Fixed positioning for bottom */
-            bottom: 0; /* Stick to the bottom */
-            width: 100%; /* Full width */
-            background-color: white; /* Adjust background color as needed */
-        }
-        
-        .logo {
-            width: 100px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio when resizing */
-        }
 
         /* Common style for text elements */
         /* Style for the title */
@@ -47,27 +33,12 @@
             font-size: 20px;
             color: black; /* Set the color of the text */
         }
-        
+
         /* Style for the clickable link */
         .linked-word {
             color: blue; /* Set the color of the link */
             cursor: pointer; /* Change the cursor to a pointer on hover */
             text-decoration: none;
-            font-size: 20px;
-        }
-        .text {
-            font-size: 20px;
-            margin-top: 6px;
-        }        
-        
-       .text1 {
-            text-align: right !important;
-            font-weight: bold; /* Make the text bold */
-            font-size: 20px;
-        }
-        .text2 {
-            text-align: center !important;
-            font-weight: bold; /* Make the text bold */
             font-size: 20px;
         }
 
@@ -98,50 +69,44 @@
             font-weight: bold; /* Make the text bold */
         }
 
-        /* Media query for smaller screens */
-        @media (max-width: 600px) {
-            .title {
-                font-size: 28px;
-            }
-            .sub-title {
-                font-size: 24px;
-            }
-            .linked-word {
-                font-size: 20px;
-                font-weight: bold; /* Make the text bold */   
-            }
-            .Note {
-                font-size: 16px;
-            }
-            .Rules {
-                font-size: 20px;
-                font-weight: bold; /* Make the text bold */
-            }
-            .text1 {
-                font-size: 20px;
-                font-weight: bold; /* Make the text bold */
-            }
-            .text2 {
-                font-size: 20px;
-                font-weight: bold; /* Make the text bold */
-            }
-            .image-text {
-                font-size: 24px;
-            }
+        /* Style for the logo */
+        .logo-container {
+            text-align: center; /* Center the logo */
+            margin-top: 20px; /* Adjust top margin as needed */
+            margin-bottom: 20px; /* Adjust bottom margin as needed */
+        }
+
+        .logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio when resizing */
         }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <div class="image-text">
+            <p>Original:</p>
+        </div>
+        <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_640.jpg" alt="Image 1" class="merged-image">
+    </div>
+
+    <div class="image-container">
+        <div class="image-text">
+            <p>Changed:</p>
+        </div>
+        <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_488.jpg" alt="Image 2" class="merged-image">
+    </div>
+
     <!-- Logo -->
     <div class="logo-container">
         <img src="https://storage.googleapis.com/aluminum_saloum/SALUMINIUM%20final%20180x%20130_page-0001.jpg" alt="Logo" class="logo">
     </div>
 
-    <div class="title text">
+    <div class="title">
         <p> WELCOME TO OUR COMPETITION</p>
     </div>
 
-    <div class="sub-title text">
+    <div class="sub-title">
         <p>فتّش عن الاختلافات بين الصورتين لتفوت بالسحب وتربح معنا هيدا الستاند</p>
     </div>
 
@@ -169,22 +134,8 @@
         <p>- ع صفحتنا dm لإجاباتك screenshot بعتلنا </p>
     </div>
 
-    <div class="Note text">
+    <div class="Note">
         <p>ملاحظة: موجود 8 اختلافات؛ لاقي 7 وفوت بالسحب، و إذا لقيت الثامن، رح نكتب اسمك مرتين لتضاعف فرصتك بالربح</p>
-    </div>
-
-    <div class="image-container">
-        <div class="image-text text">
-            <p>Original:</p>
-        </div>
-        <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_640.jpg" alt="Image 1" class="merged-image">
-    </div>
-
-    <div class="image-container">
-        <div class="image-text text">
-            <p>Changed:</p>
-        </div>
-        <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_488.jpg" alt="Image 2" class="merged-image">
     </div>
 </body>
 </html>
