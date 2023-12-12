@@ -9,8 +9,8 @@
         .merged-image {
             width: 561px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio when resizing */
-            display: inline-block; /* Display images in a horizontal row */
-            margin: 0 2px; /* Add some margin between the images */
+            display: block; /* Ensure images stack vertically on small screens */
+            margin: 0 auto 10px; /* Center images and add margin at the bottom */
         }
 
         /* Style for the title */
@@ -31,18 +31,34 @@
             text-decoration: underline; /* Add an underline for visual indication */
             cursor: pointer; /* Change the cursor to a pointer on hover */
         }
+
+        /* Style for the Rules class */
+        .Rules {
+            font-weight: bold; /* Make the text bold */
+        }
+
+        /* Container for each image and text */
+        .image-container {
+            text-align: center;
+        }
+
+        /* Style for the text above each image */
+        .image-text {
+            font-size: 16px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="title">
-        <p><span class="Rules"> WELCOME TO OUR COMPETITION</p>
-        <p><span class="Rules"> Find the differences between these two pictures to enter the Draw and win the stand!</p>
-        <p><span class="Rules"> Our Rules are simple:</p>
+        <p><span class="Rules"> WELCOME TO OUR COMPETITION</span></p>
+        <p><span class="Rules"> Find the differences between these two pictures to enter the Draw and win the stand!</span></p>
+        <p><span class="Rules"> Our Rules are simple:</span></p>
         <p><span class="before-link"> Follow our Page: </span><a href="https://instagram.com/aluminium_saloum?igshid=YTQwZjQ0NmI0OA==" class="linked-word" target="_blank">aluminium_saloum</a></p>
-        <p><span class="Rules"> Like the Last Post</p>
-        <p><span class="Rules"> Comment "Done" on the Post</p>
-        <p><span class="Rules"> Don't forget to send screenshot of your answers Dm to our Page</p>
-        <p><span class="Rules"> Note: There are 8 differences; You can find 7 and enter the Draw, but if you find the 8 your name will be written twice to double your chance!</p>
+        <p><span class="Rules"> Like the Last Post</span></p>
+        <p><span class="Rules"> Comment "Done" on the Post</span></p>
+        <p><span class="Rules"> Don't forget to send a screenshot of your answers DM to our Page</span></p>
+        <p><span class="Rules"> Note: There are 8 differences; You can find 7 and enter the Draw, but if you find the 8 your name will be written twice to double your chance!</span></p>
     </div>
 
     <div class="image-container">
