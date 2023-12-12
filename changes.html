@@ -7,7 +7,7 @@
     <style>
         /* Set an explicit width for both images */
         .merged-image {
-            width: 480px; /* Adjust the width as needed */
+            width: 100%; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio when resizing */
             margin: 0 5px; /* Add some margin between the images */
         }
@@ -47,6 +47,21 @@
             font-size: 20px;
             margin-top: 10px;
         }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 18px;
+            }
+
+            .Rules {
+                font-size: 16px;
+            }
+
+            .image-text {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -54,7 +69,7 @@
         <p><span class="Rules"> WELCOME TO OUR COMPETITION</span></p>
         <p><span class="Rules"> Find the differences between these two pictures to enter the Draw and win the stand!</span></p>
         <p><span class="Rules"> Our Rules are simple:</span></p>
-        <p><span class="Rules"> 1- Follow our Page: </span><a href="https://instagram.com/aluminium_saloum?igshid=YTQwZjQ0NmI0OA==" class="linked-word" target="_blank">aluminium_saloum</a></p>
+        <p><span class="before-link"> 1- Follow our Page: </span><a href="https://instagram.com/aluminium_saloum?igshid=YTQwZjQ0NmI0OA==" class="linked-word" target="_blank">aluminium_saloum</a></p>
         <p><span class="Rules"> 2- Like the Last Post</span></p>
         <p><span class="Rules"> 3- Comment "Done" on the Post</span></p>
         <p><span class="Rules"> 4- Send a screenshot of your answers DM to our Page</span></p>
