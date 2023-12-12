@@ -12,6 +12,12 @@
             margin: 0 0px; /* Add some margin between the images */
         }
 
+        /* Common style for text elements */
+        .text {
+            font-size: 24px;
+            margin-top: 6px;
+        }
+
         /* Style for the title */
         .title {
             text-align: center;
@@ -19,13 +25,13 @@
             font-size: 34px;
             margin-top: 14px;
         }
+
         /* Style for the sub-title */
         .sub-title {
             text-align: right;
             font-weight: bold; /* Make the text bold */
-            font-size: 28px;
-            margin-top: 14px;
         }
+
         /* Style for the text before the clickable link */
         .before-link {
             color: black; /* Set the color of the text */
@@ -35,23 +41,20 @@
         .linked-word {
             color: blue; /* Set the color of the link */
             cursor: pointer; /* Change the cursor to a pointer on hover */
-            font-size: 24px;
-            margin-top: 14px;
             text-decoration: none;
         }
+
         /* Style for the Rules class */
         .Rules {
-            font-size: 24px;
-            margin-top: 6px;
-            font-weight: italic; /* Make the text italic */
             text-align: left !important;
+            font-weight: italic; /* Make the text italic */
         }
+
         /* Style for the Note */
         .Note {
-            font-size: 24px;
-            margin-top: 6px;
             text-align: right;
         }
+
         /* Container for each image and text */
         .image-container {
             text-align: center;
@@ -74,18 +77,13 @@
                 font-size: 24px;
             }
             .linked-word {
-                color: blue; /* Set the color of the link */
-                cursor: pointer; /* Change the cursor to a pointer on hover */
-                text-decoration: none;
                 font-size: 16px;
-        }
+            }
             .Note {
                 font-size: 14px;
-                text-align: right;
             }
             .Rules {
                 font-size: 16px;
-                text-align: left !important;
             }
 
             .image-text {
@@ -95,26 +93,47 @@
     </style>
 </head>
 <body>
-    <div class="title">
-        <p><span class="title"> WELCOME TO OUR COMPETITION</span></p>
-        <p><span class="sub-title">فتّش عن الاختلافات بين الصورتين لتفوت بالسحب وتربح معنا هيدا الستاند</span></p>
-        <p><span class="Rules"> :قواعدنا بسيطة </span></p>
-        <p><span class="Rules"> 1- Follow للصفحة:  </span><a href="https://instagram.com/aluminium_saloum?igshid=YTQwZjQ0NmI0OA==" class="linked-word" target="_blank">Aluminium Salloum</a></p>
-        <p><span class="Rules"> 2- Like عآخر Post</span></p>
-        <p><span class="Rules"> 3- في التعليقات على اخر بوست "Done" اكتب</span></p>
-        <p><span class="Rules"> 4- ع صفحتنا dm لإجاباتك عبر screenshot بعتلنا </span></p>
-        <p><span class="Note">ملاحظة: موجود 8 اختلافات؛ لاقي 7 وفوت بالسحب، و إذا لقيت الثامن، رح نكتب اسمك مرتين لتضاعف فرصتك بالربح</span></p>
+    <div class="title text">
+        <p> WELCOME TO OUR COMPETITION</p>
+    </div>
+
+    <div class="sub-title text">
+        <p>فتّش عن الاختلافات بين الصورتين لتفوت بالسحب وتربح معنا هيدا الستاند</p>
+    </div>
+
+    <div class="text">
+        <p> :قواعدنا بسيطة </p>
+    </div>
+
+    <div class="text">
+        <p> 1- Follow للصفحة:  <a href="https://instagram.com/aluminium_saloum?igshid=YTQwZjQ0NmI0OA==" class="linked-word" target="_blank">Aluminium Salloum</a></p>
+    </div>
+
+    <div class="text">
+        <p> 2- Like عآخر Post</p>
+    </div>
+
+    <div class="text">
+        <p> 3- في التعليقات على اخر بوست "Done" اكتب</p>
+    </div>
+
+    <div class="text">
+        <p> 4- ع صفحتنا dm لإجاباتك عبر screenshot بعتلنا </p>
+    </div>
+
+    <div class="Note text">
+        <p>ملاحظة: موجود 8 اختلافات؛ لاقي 7 وفوت بالسحب، و إذا لقيت الثامن، رح نكتب اسمك مرتين لتضاعف فرصتك بالربح</p>
     </div>
 
     <div class="image-container">
-        <div class="image-text">
+        <div class="image-text text">
             <p>Original:</p>
         </div>
         <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_640.jpg" alt="Image 1" class="merged-image">
     </div>
 
     <div class="image-container">
-        <div class="image-text">
+        <div class="image-text text">
             <p>Changed:</p>
         </div>
         <img src="https://storage.googleapis.com/aluminum_saloum/IMG_20231212_092944_488.jpg" alt="Image 2" class="merged-image">
